@@ -1,6 +1,6 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.bytestay/shipshape-mcp",
+  "name": "io.github.Bytestay/shipshape-mcp",
   "description": "Dockerfile and Kubernetes lint for AI agents: Pod Security Standards, A–F grade, a fix per finding.",
   "repository": {
     "url": "https://github.com/bytestay/shipshape-mcp",

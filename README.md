@@ -1,6 +1,6 @@
 # Shipshape MCP server
 
-<!-- mcp-name: io.github.bytestay/shipshape-mcp -->
+<!-- mcp-name: io.github.Bytestay/shipshape-mcp -->
 
 [![M8ven Score](https://m8ven.ai/badge/mcp/hybridforgelab/shipshape-mcp?variant=verified)](https://m8ven.ai/mcp/hybridforgelab/shipshape-mcp?s=readme)
 [![CI](https://github.com/bytestay/shipshape-mcp/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/bytestay/shipshape-mcp/actions/workflows/ci.yml)
