@@ -59,7 +59,7 @@ Without a key the server still starts. The first tool call then explains where t
 
 Also listed on Glama:
 
-[![shipshape-mcp on Glama](https://glama.ai/mcp/servers/hybridforgelab/shipshape-mcp/badge)](https://glama.ai/mcp/servers/hybridforgelab/shipshape-mcp)
+[![shipshape-mcp on Glama](https://glama.ai/mcp/servers/Bytestay/shipshape-mcp/badge)](https://glama.ai/mcp/servers/Bytestay/shipshape-mcp)
 
 ## 3. Tools
 
