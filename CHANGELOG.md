@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.5](https://github.com/Bytestay/shipshape-mcp/compare/bytestay-shipshape-mcp-v0.2.4...bytestay-shipshape-mcp-v0.2.5) (2026-11-06)
+
+
+### Documentation
+
+* Glama badge points to the Bytestay listing ([#4](https://github.com/Bytestay/shipshape-mcp/issues/4)) ([b67c5f6](https://github.com/Bytestay/shipshape-mcp/commit/b67c5f6b4ad519ef3df20549551a995de362431e))
+
 ## [0.2.4](https://github.com/Bytestay/shipshape-mcp/compare/bytestay-shipshape-mcp-v0.2.3...bytestay-shipshape-mcp-v0.2.4) (2026-11-06)
 
 
