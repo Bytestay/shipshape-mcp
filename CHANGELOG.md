@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.4](https://github.com/Bytestay/shipshape-mcp/compare/bytestay-shipshape-mcp-v0.2.3...bytestay-shipshape-mcp-v0.2.4) (2026-11-06)
+
+
+### Bug Fixes
+
+* use the io.github.Bytestay namespace the MCP registry grants (case-sensitive) ([#1](https://github.com/Bytestay/shipshape-mcp/issues/1)) ([f52eb55](https://github.com/Bytestay/shipshape-mcp/commit/f52eb55778add885a836cfb8317c3811a28e53e1))
+
 ## [0.2.3](https://github.com/hybridforgelab/shipshape-mcp/compare/hybridforgelab-shipshape-mcp-v0.2.2...hybridforgelab-shipshape-mcp-v0.2.3) (2026-11-05)
 
 
