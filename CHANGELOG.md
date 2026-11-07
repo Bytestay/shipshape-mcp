@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.5](https://github.com/Bytestay/shipshape-mcp/compare/bytestay-shipshape-mcp-v0.2.4...bytestay-shipshape-mcp-v0.2.5) (2026-11-07)
+
+
+### Documentation
+
+* add MCP registry and Glama score badges ([#6](https://github.com/Bytestay/shipshape-mcp/issues/6)) ([48e963e](https://github.com/Bytestay/shipshape-mcp/commit/48e963e1a88ba2d6e11c98ee1984dac117d3c2e2))
+* Glama badge points to the Bytestay listing ([#4](https://github.com/Bytestay/shipshape-mcp/issues/4)) ([b67c5f6](https://github.com/Bytestay/shipshape-mcp/commit/b67c5f6b4ad519ef3df20549551a995de362431e))
+
 ## [0.2.4](https://github.com/Bytestay/shipshape-mcp/compare/bytestay-shipshape-mcp-v0.2.3...bytestay-shipshape-mcp-v0.2.4) (2026-11-06)
 
 
