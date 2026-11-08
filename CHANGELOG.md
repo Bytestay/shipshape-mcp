@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.6](https://github.com/Bytestay/shipshape-mcp/compare/bytestay-shipshape-mcp-v0.2.5...bytestay-shipshape-mcp-v0.2.6) (2026-11-08)
+
+
+### Documentation
+
+* MCP Registry badge shows the latest version ([#7](https://github.com/Bytestay/shipshape-mcp/issues/7)) ([975eb11](https://github.com/Bytestay/shipshape-mcp/commit/975eb1138a69baa546fd2711a8b00c2337b90c7c))
+
 ## [0.2.5](https://github.com/Bytestay/shipshape-mcp/compare/bytestay-shipshape-mcp-v0.2.4...bytestay-shipshape-mcp-v0.2.5) (2026-11-07)
 
 
