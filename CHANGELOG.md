@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.7](https://github.com/Bytestay/shipshape-mcp/compare/bytestay-shipshape-mcp-v0.2.6...bytestay-shipshape-mcp-v0.2.7) (2026-11-09)
+
+
+### Documentation
+
+* add the mcprush badge ([#11](https://github.com/Bytestay/shipshape-mcp/issues/11)) ([83d8eff](https://github.com/Bytestay/shipshape-mcp/commit/83d8eff7fd11578a2f63fea11c14bd00ba03ed1c))
+* M8ven badge points to the bytestay listing ([#9](https://github.com/Bytestay/shipshape-mcp/issues/9)) ([007de2f](https://github.com/Bytestay/shipshape-mcp/commit/007de2faf96d0505ee6780329358891f18d33121))
+
 ## [0.2.6](https://github.com/Bytestay/shipshape-mcp/compare/bytestay-shipshape-mcp-v0.2.5...bytestay-shipshape-mcp-v0.2.6) (2026-11-08)
 
 
