@@ -2,7 +2,7 @@
 
 <!-- mcp-name: io.github.Bytestay/shipshape-mcp -->
 
-[![M8ven Score](https://m8ven.ai/badge/mcp/hybridforgelab/shipshape-mcp?variant=verified)](https://m8ven.ai/mcp/hybridforgelab/shipshape-mcp?s=readme)
+[![M8ven Score](https://m8ven.ai/badge/mcp/bytestay/shipshape-mcp?variant=verified)](https://m8ven.ai/mcp/bytestay/shipshape-mcp?s=readme)
 [![CI](https://github.com/bytestay/shipshape-mcp/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/bytestay/shipshape-mcp/actions/workflows/ci.yml)
 [![PyPI](https://img.shields.io/pypi/v/bytestay-shipshape-mcp)](https://pypi.org/project/bytestay-shipshape-mcp/)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue)](https://pypi.org/project/bytestay-shipshape-mcp/)
