@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.8](https://github.com/Bytestay/shipshape-mcp/compare/bytestay-shipshape-mcp-v0.2.7...bytestay-shipshape-mcp-v0.2.8) (2026-11-09)
+
+
+### Bug Fixes
+
+* read BYTESTAY_* settings, keep HFL_* as a fallback ([#12](https://github.com/Bytestay/shipshape-mcp/issues/12)) ([7aca1cb](https://github.com/Bytestay/shipshape-mcp/commit/7aca1cb8faeadaa0f559f954167f25f42a516dcc))
+
 ## [0.2.7](https://github.com/Bytestay/shipshape-mcp/compare/bytestay-shipshape-mcp-v0.2.6...bytestay-shipshape-mcp-v0.2.7) (2026-11-09)
 
 
