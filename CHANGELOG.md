@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.9](https://github.com/Bytestay/shipshape-mcp/compare/bytestay-shipshape-mcp-v0.2.8...bytestay-shipshape-mcp-v0.2.9) (2026-11-12)
+
+
+### Documentation
+
+* note that the repository was formerly Hybrid Forge Lab ([#16](https://github.com/Bytestay/shipshape-mcp/issues/16)) ([f8987ff](https://github.com/Bytestay/shipshape-mcp/commit/f8987ff043f650b02849ec517e14e462c813dfec))
+* use the mcprush card badge ([#14](https://github.com/Bytestay/shipshape-mcp/issues/14)) ([eac2b55](https://github.com/Bytestay/shipshape-mcp/commit/eac2b558869bf5570205ed7ef7a4f9880a20c947))
+
 ## [0.2.8](https://github.com/Bytestay/shipshape-mcp/compare/bytestay-shipshape-mcp-v0.2.7...bytestay-shipshape-mcp-v0.2.8) (2026-11-09)
 
 
