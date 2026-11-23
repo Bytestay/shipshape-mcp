@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.10](https://github.com/Bytestay/shipshape-mcp/compare/bytestay-shipshape-mcp-v0.2.9...bytestay-shipshape-mcp-v0.2.10) (2026-11-23)
+
+
+### Bug Fixes
+
+* scope local file paths ([#19](https://github.com/Bytestay/shipshape-mcp/issues/19)) ([60e1d1f](https://github.com/Bytestay/shipshape-mcp/commit/60e1d1f3006d120e472535385de8c9ae5a08d9f4))
+
 ## [0.2.9](https://github.com/Bytestay/shipshape-mcp/compare/bytestay-shipshape-mcp-v0.2.8...bytestay-shipshape-mcp-v0.2.9) (2026-11-12)
 
 
