@@ -53,11 +53,56 @@ async def test_json_manifest_through_the_server(api):
 async def test_text_file_limits(tmp_path):
     with pytest.raises(ToolError, match="No such file"):
         files.read_text(str(tmp_path / "missing"), 100)
-    big = tmp_path / "big"
+    big = tmp_path / "big.json"
     big.write_text("x" * 50)
     with pytest.raises(ToolError, match="limit is"):
         files.read_text(str(big), 10)
-    binary = tmp_path / "bin"
+    binary = tmp_path / "bin.json"
     binary.write_bytes(b"\xff\xfe\x00")
     with pytest.raises(ToolError, match="not UTF-8"):
         files.read_text(str(binary), 100)
+
+
+def _tree(tmp_path):
+    root = tmp_path / "root"
+    root.mkdir()
+    (tmp_path / "secret.yaml").write_text("secret: 1\n")
+    return root
+
+
+@pytest.mark.parametrize("path", ["../secret.yaml", "{abs}"])
+async def test_path_outside_root_is_refused(api, tmp_path, monkeypatch, path):
+    root = _tree(tmp_path)
+    monkeypatch.chdir(root)
+    with pytest.raises(ToolError, match="outside the allowed folder"):
+        await shipshape.lint(path=path.format(abs=tmp_path / "secret.yaml"))
+    assert not api.requests
+
+
+async def test_symlink_escape_is_refused(api, tmp_path, monkeypatch):
+    root = _tree(tmp_path)
+    (root / "Dockerfile").symlink_to(tmp_path / "secret.yaml")
+    monkeypatch.chdir(root)
+    with pytest.raises(ToolError, match="outside the allowed folder"):
+        await shipshape.lint(path="Dockerfile")
+    assert not api.requests
+
+
+async def test_wrong_extension_is_refused(api, tmp_path, monkeypatch):
+    (tmp_path / "id_rsa").write_text("x")
+    (tmp_path / "notes.txt").write_text("x")
+    for name in ("id_rsa", "notes.txt"):
+        with pytest.raises(ToolError, match="not an allowed file type"):
+            await shipshape.lint(path=name)
+    assert not api.requests
+
+
+async def test_explicit_root_env(api, tmp_path, monkeypatch):
+    other = tmp_path / "other"
+    other.mkdir()
+    (other / "Containerfile").write_text("FROM scratch\n")
+    monkeypatch.setenv("SHIPSHAPE_MCP_ROOT", str(other))
+    await shipshape.lint(path="Containerfile")
+    assert api.last_json()["type"] == "dockerfile"
+    with pytest.raises(ToolError, match="outside the allowed folder"):
+        await shipshape.lint(path=str(tmp_path / "x.yaml"))
