@@ -43,14 +43,14 @@ def _type_for(path: str) -> str:
 async def lint(
     content: Annotated[str | dict | list | None,
                        Field(description="The Dockerfile or manifest, as text (up to 512 KiB).")] = None,
-    path: Annotated[str | None, Field(description="A local file to lint instead of `content`.")] = None,
+    path: Annotated[str | None, Field(description="A local file to lint instead of `content`. Its content is uploaded to the Shipshape API. Only files inside the working directory (or SHIPSHAPE_MCP_ROOT) named Dockerfile*, *.yaml, *.yml or *.json are read.")] = None,
     type: Annotated[Literal["auto", "dockerfile", "kubernetes"],
                     Field(description="auto detects Dockerfile vs Kubernetes YAML/JSON.")] = "auto",
     fail_on: Annotated[Severity, Field(description="`passed` is false at this severity or worse.")] = "high",
     ignore: Annotated[list[str] | None, Field(description='Rule ids to skip, e.g. ["DF-017"].')] = None,
 ) -> dict:
     """Lint a Dockerfile or Kubernetes manifest. Returns the grade, score, `passed` and every finding with its
-    line, fix and reference. Give either `content` or `path`."""
+    line, fix and reference. Give either `content` or `path`. The content of a `path` file is uploaded to the Shipshape API."""
     if bool(content) == bool(path):
         raise ToolError("Give exactly one of content or path.")
     if path:
